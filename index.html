@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="./img/nerd.jpg">
+  <meta property="og:title" content="Dev | Mateus Israel" />
+  <meta name="description" content="Mateus Israel - Front-end Developer">
+  <title>Dev | Mateus Israel</title>
+</head>
+<body>
+  
+  <main>
+    <section class="about">
+      <div class="icons">
+        <a target="_blank" href="https://github.com/mateusisrael"><img class="icon" src="img/github.svg" alt="github icon"></img></a>
+        <a target="_blank" href="https://www.linkedin.com/in/mateus-i-942973ba/"><img class="icon" src="img/linkedin.svg" alt="linkedin icon"></img></a>
+      </div>
+      <div id="profile" class="profile">
+      </div>
+      <h2>Mateus Israel</h2>
+      <p>Desenvolvedor Front-End</p>
+      <p>Rio de Janeiro</p>
+      <p class="contact">mateuss.i.fernandes@gmail.com | (21) 98164-2473</p>
+    </section>
+    <div class="descriptions">
+      <section class="jobs">
+        <h1>Trabalhos:</h1>
+        <section class="experience">
+          <div class="date">
+            <p>2019</p>
+          </div>
+          <div class="work-description">
+            <h1>World Wide Imports</h1>
+            <p>Manutenção e estilização do e-commerce.</p>
+          </div>
+        </section>
+
+        <section class="experience">
+          <div class="date">
+            <p>2020</p>
+          </div>
+          <div class="work-description">
+            <h1>Petronect</h1>
+            <p>Participei de um time onde juntos criamos uma aplicação para a Alexa, a famosa assistente de voz da Amazon</p>
+          </div>
+        </section>
+
+        <section class="experience">
+          <div class="date">
+            <p>2020</p>
+          </div>
+          <div class="work-description">
+            <h1>Petronect</h1>
+            <p>Após participar do MVP Alexa fui convidado a trabalhar no Laboratório de inovação como dev frontend.</p>
+          </div>
+        </section>
+
+        <section class="experience">
+          <div class="date">
+            <p>atual</p>
+          </div>
+          <div class="work-description">
+            <h1>Estúdio Vai na Web</h1>
+            <p>Aqui transformo ideias em aplicações reais.</p>
+          </div>
+        </section>
+      </section>
+      <section class="skills">
+        <h1>Experiência com:</h1>
+        <div class="box">
+          <section class="marginTop2vh marginRight">
+            <div class="date marginBottom newColor">
+              <p>Linguagens/Frameworks:</p>
+            </div>
+            <ul class="work-description">
+              <li>NodeJs</li>
+              <li>ReactJs</li>
+              <li>JavaScript</li>
+              <li>Typescrypt</li>
+              <li>HTML/CSS</li>
+              <li>Flutter(básico)</li>
+              <li>Python(básico)</li>
+              <li>Go (básico)</li>
+            </ul>
+          </section>
+
+          <section class="marginTop2vh">
+            <div class="date marginBottom newColor">
+              <p>Diferenciais:</p>
+            </div>
+            <ul class="work-description">
+              <li>Versionamento com Git</li>
+              <li>Metodologia Scrum</li>
+              <li>Linux/Bash</li>
+            </ul>
+          </section>
+      </div>
+      </section>
+    </div>
+
+  </main>
+  <style>
+    :root {
+      --primary-color: #006a7a;
+      --font: #191919;
+      --secondary-font: #717171;
+      --header-font: #fff;
+      --header-background: #b1b1b1c4;
+      --skills-color: #006a7a;
+      --main-bk: #b1b1b12e;
+    }
+    * { margin: 0; padding: 0; }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main {
+      max-width: 1024px;
+      padding: 5%;
+      box-sizing: border-box;
+      width: 100vw;
+      font-size: 1.2em;
+      background-color: var(--main-bk);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 5vh 0;
+      text-align: center;
+      padding: 28px 0 28px 0;
+      font-size: 0.8em;
+      background-color: var(--primary-color);
+    }
+    /* .about h1 { color: var(--font); } */
+    .about h2 { color: var(--header-font); }
+    .about p { color: var(--header-font); }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: silver;
+      margin-bottom: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("./img/profile.jpg");
+    }
+
+    .descriptions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media(max-width: 720px) {
+      main{ font-size: 1em; }
+      .descriptions{
+        margin-left: 2vh;
+        flex-direction: column;
+      }
+      .skills{ margin-top: 5vh; }
+      .box{ 
+        display: flex;
+        flex-direction: row;
+      }
+      .marginRight{
+        margin-right: 10vw;
+      }
+    }
+
+    /* .jobs h1, .skills h1 { font-size: 1rem; } */
+    .jobs h1 { color: var(--primary-color); }
+    .skills{ color: var(--font); }
+    .skills h1 { color: var(--skills-color); }
+
+    .experience {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2vh;
+      max-width: 360px;
+    }
+    .experience p{
+      color: var(--font);
+    }
+
+    .date {
+      font-size: 0.8rem;
+      margin-top: 5px;
+      margin-right: 10px;
+      color: var(--secondary-font);
+    }
+    .date p {
+      color: var(--secondary-font);
+    }
+    .newColor p{ color: var(--primary-color); }
+
+    .work-description {
+      font-size: 0.8em;
+    }
+    .work-description li {
+      list-style-type: none;
+      margin-bottom: 3px;
+      margin-left: 5px;
+    }
+    
+    .icons{
+      background-color: var(--primary-color);
+      padding: 5px;
+      border-radius: 10px;
+      position: fixed;
+      left: 5%;
+      margin-left: 2%;
+    }
+    .contact{ margin-top: 20px; font-size: 0.8em;}
+    .icon{ width: 30px; cursor: pointer; margin: 2px; }
+    .marginTop2vh{ margin-top: 2vh; }
+    .marginBottom { margin-bottom: 3px; }
+  </style>
+</body>
+</html>
