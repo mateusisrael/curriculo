@@ -1,2 +1,2 @@
 # Mateus Israel Curriculo
-[Github Pages](https://mateusisrael.github.io/curriculo/)
+[Github Pages](https://mateusisrael.github.io/profile/)
