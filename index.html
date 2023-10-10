@@ -19,14 +19,15 @@
       </div>
       <div id="profile" class="profile">
       </div>
-      <h2>Mateus Israel</h2>
+      <h2>Mateus Israel | 24 anos</h2>
       <p>Desenvolvedor Front-End</p>
       <p>Rio de Janeiro</p>
       <p class="contact">mateuss.i.fernandes@gmail.com | (21) 98164-2473</p>
     </section>
+
     <div class="descriptions">
       <section class="jobs">
-        <h1>Trabalhos:</h1>
+        <h1 class="h-title">Empresas onde atuei:</h1>
         <section class="experience">
           <div class="date">
             <p>2019</p>
@@ -43,7 +44,7 @@
           </div>
           <div class="work-description">
             <h1>Petronect</h1>
-            <p>Participei de um time onde juntos criamos uma aplicação para a Alexa, a famosa assistente de voz da Amazon.</p>
+            <p>Participei de um time onde juntos criamos uma aplicação para a Alexa, a assistente de voz da Amazon.</p>
           </div>
         </section>
 
@@ -73,12 +74,26 @@
           </div>
           <div class="work-description">
             <h1>1Sti</h1>
-            <p>Minha casa atual.</p>
+            <p>Atualmente trabalhando em um grande projeto de <strong>automação do centro cirúrgico de um dos maiores hospitais do Brasil</strong>. Sistema esse que utiliza a <strong>arquitetura de microserviços</strong> que se comunicam com o sistema hospitalar <strong>Tasy, da Philips</strong>, utilizando a lib <strong>React e Redux</strong> no frontend. <br />Anteriormente, nessa mesma empresa, trabalhei num sistema de prontuário eletrônico de pacientes, atuando na parte mobile da aplicação onde utilizávamos <strong>React Native</strong>.</p>
           </div>
         </section>
       </section>
       <section class="skills">
-        <h1>Experiência com:</h1>
+        <h1 class="h-title">Formação:</h1>
+        <div class="box">
+          <section class="marginTop2vh marginRight">
+            <ul class="work-description">
+              <li>- Graduação de <strong>Análise e Desenvolvimento de sistemas</strong> na Estácio de Sá. Atualmente no 3° período.</li>
+              <br />
+              <li>- Curso técnico de desenvolvimento web na escola <strong>Vai na Web</strong></li>
+              <br>
+              <li>- Curso técnico de NodeJs no <strong>Rocketseat Ignite</strong></li>
+            </ul>
+          </section>
+        </div>
+        <br>
+        <br>
+        <h1 class="h-title">Experiência com:</h1>
         <div class="box">
           <section class="marginTop2vh marginRight">
             <div class="date marginBottom newColor">
@@ -91,6 +106,8 @@
               <li>Typescrypt</li>
               <li>HTML/CSS</li>
               <li>Python (básico)</li>
+              <li>Experiência com React Native</li>
+              <li>Experiência com Flutter</li>
             </ul>
           </section>
 
@@ -124,6 +141,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
     main {
       max-width: 1024px;
@@ -160,13 +178,19 @@
       background-image: url("./img/profile.jpg");
     }
 
+    .bio {
+      border: 1px solid var(--primary-color);
+      width: 100%;
+      border-radius: 3px;
+    }
+
     .descriptions {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
     @media(max-width: 720px) {
-      main{ font-size: 1em; }
+      /* main{ font-size: 1.2em; } */
       .descriptions{
         margin-left: 2vh;
         flex-direction: column;
@@ -182,6 +206,7 @@
     }
 
     /* .jobs h1, .skills h1 { font-size: 1rem; } */
+    .h-title { font-size: 1.5rem; }
     .jobs h1 { color: var(--primary-color); }
     .skills{ color: var(--font); }
     .skills h1 { color: var(--skills-color); }
@@ -191,6 +216,7 @@
       flex-direction: row;
       margin-top: 2vh;
       max-width: 360px;
+      line-height: 1.3;
     }
     .experience p{
       color: var(--font);
